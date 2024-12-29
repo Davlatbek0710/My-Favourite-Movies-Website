@@ -31,6 +31,6 @@ This is a web application built using the **Flask** framework and **SQLAlchemy**
 5. Open your browser and navigate to:
    ```
    http://127.0.0.1:5000
-# Contributing
+## Contributing
 
 Feel free to fork this repository, make improvements, and submit a pull request. Your contributions are welcome!
