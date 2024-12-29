@@ -19,3 +19,20 @@ This is a web application built using the **Flask** framework and **SQLAlchemy**
 1. Clone the repository:
    ```bash
    git clone https://github.com/Davlatbek0710/My-Favourite-Movies-Website.git
+2. Navigate to the project directory:
+   ```bash
+   cd My-Favourite-Movies-Website
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+4. Run the flask app
+   ```bash
+   python app.py
+5. Open your browser and navigate to:
+   ```
+   http://127.0.0.1:5000
+
+
+# Contributing
+
+Feel free to fork this repository, make improvements, and submit a pull request. Your contributions are welcome!
