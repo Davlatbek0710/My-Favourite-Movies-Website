@@ -1,3 +1,9 @@
+"""
+    Author: Davlatbek Kobiljonov @davlatbek_s7
+    Copyright Jan 2025
+    Github Repo: https://github.com/Davlatbek0710/My-Favourite-Movies-Website
+"""
+
 from flask import Flask, render_template, redirect, url_for, request
 from flask_bootstrap import Bootstrap5
 from flask_sqlalchemy import SQLAlchemy
@@ -7,15 +13,16 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
 import requests
+import os
 
-MOVIE_DB_API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwNGM2MTE5YjBlOWU2OGNhYjUwNjAzNDA2OGFkNDI2NSIsInN1YiI6IjY2MzY4MWI5OGRlMGFlMDEyY2Y2MTIwMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.5VJxnvqVYCqpf-AkGLONXj6LrEOpaBARpweDmpjrbD8"
+MOVIE_DB_API_KEY = os.environ.get("MOVIE_DB_API_KEY")
 MOVIE_DB_SEARCH_URL = "https://api.themoviedb.org/3/search/movie"
 MOVIE_DB_DETAILS = "https://api.themoviedb.org/3/movie/"
 MOVIE_DB_IMAGE_URL = "https://image.tmdb.org/t/p/w500"
 headers = {"Authorization": f"Bearer {MOVIE_DB_API_KEY}"}
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
+app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
 Bootstrap5(app)
 
 
