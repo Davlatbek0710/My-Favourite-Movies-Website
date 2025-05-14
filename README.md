@@ -2,6 +2,8 @@
 
 This is a web application built using the **Flask** framework and **SQLAlchemy**. It serves as a personal catalog where you can showcase, manage, and share your favorite movies. The application provides a user-friendly interface backed by a robust and efficient database.
 
+NOTE❗ Install Python 3.11 from official website for this program to work!
+
 ## Features
 - **Dynamic Movie Listings**: View a curated list of movies with titles, genres, release years, and ratings.
 - **Detailed Movie Information**: Each movie entry includes a synopsis, director, cast, and poster.
